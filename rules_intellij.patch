@@ -1,0 +1,13 @@
+diff --git a/intellij_platform_sdk/BUILD.idea231 b/intellij_platform_sdk/BUILD.idea231
+index 58765d182..6e7a2c1f8 100644
+--- a/intellij_platform_sdk/BUILD.idea231
++++ b/intellij_platform_sdk/BUILD.idea231
+@@ -2,7 +2,7 @@
+ #
+ # Plugin source jars for IntelliJ CE, accessed remotely.
+ 
+-load("@//intellij_platform_sdk:build_defs.bzl", "no_mockito_extensions")
++load("@rules_intellij//intellij_platform_sdk:build_defs.bzl", "no_mockito_extensions")
+ 
+ package(default_visibility = ["//visibility:public"])
+ 

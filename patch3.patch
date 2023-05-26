@@ -1,0 +1,13 @@
+diff --git a/intellij_platform_sdk/build_defs.bzl b/intellij_platform_sdk/build_defs.bzl
+index 4b8a1b9f6..99d14fcdf 100644
+--- a/intellij_platform_sdk/build_defs.bzl
++++ b/intellij_platform_sdk/build_defs.bzl
+@@ -282,7 +282,7 @@ def _do_select_for_plugin_api(params):
+         if ij_product == "default":
+             select_params["//conditions:default"] = value
+         else:
+-            select_params["//intellij_platform_sdk:" + ij_product] = value
++            select_params["@rules_intellij//intellij_platform_sdk:" + ij_product] = value
+ 
+     return select(
+         select_params,
